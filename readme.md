@@ -29,3 +29,11 @@ A Version Control System (VCS) is a software tool that helps developers manage c
     * __Project Management:__ Helps manage large projects by keeping track of all changes and ensuring everyone works on the latest version.
     * __Risk Mitigation:__ Reduces the risk of data loss and makes it easier to recover from mistakes or failures.
     * __Audit Trail:__ Provides a clear record of changes, which is useful for compliance and accountability purposes.
+
+ ## Installing Git
+ To install Git, download the installer for your OS from the Git website or use package managers like apt-get for Linux. Follow on-screen instructions to complete installation. Git will be ready to use from the command line for version control in your projects. Below are the installation steps for Git on Windows, macOS, and Linux, each with their respective links:
+   * __Windows__: [Download Git for Windows](https://git-scm.com/download/win) and follow the installation instructions.
+   * __macOS__: [Install Git on macOS](https://git-scm.com/download/mac) using the installer package provided.
+   * __Linux__: Install Git on Linux via your distribution's package manager or [download directly from Git](https://git-scm.com/download/linux) and compile it from source.
+
+

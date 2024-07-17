@@ -36,4 +36,34 @@ A Version Control System (VCS) is a software tool that helps developers manage c
    * __macOS__: [Install Git on macOS](https://git-scm.com/download/mac) using the installer package provided.
    * __Linux__: Install Git on Linux via your distribution's package manager or [download directly from Git](https://git-scm.com/download/linux) and compile it from source.
 
+ ## Connecting Git to GitHub on your local machine
+Here are a few steps for connecting to Github after installing Git on your machine locally:
+1. Get a GitHub account.
+    * Sign up for a free GitHub account if you don't already have one.
+2. Set up Git with your user name and email:
+    * Configure Git with your name and email to associate commits with you.
+        ````
+        git config --global user.name "Your name here"
+        git config --global user.email "your_email@example.com"
+        ````
+3. Set up SSH on your computer:
+    * Generate SSH keys if they do not exist to enable secure communication with GitHub.
+        ````
+        ssh-keygen -t rsa -C "your_email@example.com"
+        ````
+4. Copy your public key into your clipboard:
+    * Copy the SSH public key to your clipboard for later use.
+        ````
+        pbcopy < ~/.ssh/id_rsa.pub
+        ````
+5. Paste your SSH public key into your GitHub account settings:
+    * Add the copied SSH key to your GitHub account under SSH keys.
+    * Go to GitHub Account Settings > SSH Keys > Add SSH Key.
+6. Test your SSH connection:
+    * Verify that your SSH key is properly set up by testing the connection to GitHub.
+    ````
+    ssh -T git@github.com
+    ````
+    * If it says, "Hi username! You've successfully authenticated, but GitHub does not provide shell access," it worked.
+
 

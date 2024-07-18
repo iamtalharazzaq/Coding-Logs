@@ -61,9 +61,22 @@ Here are a few steps for connecting to Github after installing Git on your machi
     * Go to GitHub Account Settings > SSH Keys > Add SSH Key.
 6. Test your SSH connection:
     * Verify that your SSH key is properly set up by testing the connection to GitHub.
-    ````
-    ssh -T git@github.com
-    ````
+        ````
+        ssh -T git@github.com
+        ````
     * If it says, "Hi username! You've successfully authenticated, but GitHub does not provide shell access," it worked.
+
+# __Git Terminologies__
+Git users have their own terminology. They use __repository__ instead of __folder__ and __branch__ instead of __timeline__. However, I think __timeline__ better captures the concept.
+### Checking the Installed Git Version:
+* To verify the version of Git installed on your system, follow these steps:
+    1. Open a Terminal Window:
+        * On macOS or Linux, you can use the built-in Terminal application.
+        * On Windows, you can use Command Prompt, PowerShell, or Git Bash.
+    2. Run the Command:
+        ````
+        git --version
+        ````
+This command will display the version of Git currently installed on your system. Git is a stable and reliable software, with breaking changes exceptionally rare.
 
 
